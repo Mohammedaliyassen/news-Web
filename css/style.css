@@ -1,0 +1,107 @@
+*{
+    transition-duration: .1s;
+}
+body{
+    font-family: 'Roboto Condensed', Times, serif;
+    background-color: #eee;
+}
+#topBar{
+    background-color: #333333;
+}
+.date{
+    background-color: #cc0010;
+}
+#navLinks li a{
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+#slideNav{
+    position: sticky;
+    top: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 24vw;
+    text-decoration: none;
+    transform: translate(-21vw , -50%);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+#slideNav:hover{
+    transform: translate(0 , -50%);
+}
+#slideNav span{
+    transform: rotate(90deg);
+    position: absolute;
+    letter-spacing: 1px;
+    right: -2vw;
+    bottom: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#searchForm input{
+    outline: none;
+}
+#searchForm input:focus{
+    outline: rgb(188, 188, 255);
+}
+#searchForm button{
+    outline: none;
+    background-color: #cc0010;
+    color: #fff;
+}
+/* .sideNav{
+    position: sticky;
+    top:  -100px;
+} */
+#posts{
+    list-style: none;
+    padding: 0;
+}
+#posts li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+#posts li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 200;
+}
+#posts li a:hover{
+    color: #1ea2f1;
+}
+.writer{
+    display: flex;
+    align-items: flex-end;
+}
+#commentArea:hover , #commentArea:focus ,.commentData input:hover , .commentData input:focus{
+    outline:1px solid #2320f3;
+}
+#commentArea ,.commentData input{
+    outline:none;
+    transition-duration: 0;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+}
+.printComment{
+    background-color: #CC0010;
+    color: #fff;
+}
+.userComment ,.stories{
+    background-color: #cc0010;
+    color: white;
+    position: relative;
+}
+.userComment::after ,.stories::after{
+    content: '';
+    position: absolute;
+    border-left: 31px solid #CC0010;
+    border-top: 36px solid transparent;
+    top: 1px;
+    right: -31px;
+    width: 0%;
+    height: 96%;
+}
